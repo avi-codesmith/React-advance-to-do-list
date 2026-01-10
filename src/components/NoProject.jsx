@@ -3,7 +3,7 @@ export default function NoProject({ handleOpenform }) {
     <div className="flexbox noProject">
       <img alt="No project icon" src="notepad.svg" />
       <p>No Project Selected</p>
-      <p class="sm-reg">
+      <p className="sm-reg">
         Select an existing project to continue your work, or start a brand-new
         project and bring your next idea to life.
       </p>

@@ -1,8 +1,12 @@
-export default function Input({ textArea, label, ...props }) {
+export default function Input({ textArea, label, ref, ...props }) {
   return (
     <>
       <label>{label}</label>
-      {textArea ? <textarea {...props}></textarea> : <input {...props} />}
+      {textArea ? (
+        <textarea ref={ref} {...props}></textarea>
+      ) : (
+        <input ref={ref} {...props} />
+      )}
     </>
   );
 }
