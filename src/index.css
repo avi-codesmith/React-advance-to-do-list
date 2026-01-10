@@ -1,13 +1,153 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif, Arial, Helvetica;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #ffe8cc;
+  color: #d9480f;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.sm-reg {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0.2rem;
+  color: #555;
+}
+
+.regular-btn {
+  background-color: #ffb459;
+  color: #d9480f;
+  border: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.regular-btn:hover {
+  background-color: #ffab43;
+}
+
+/*************************************************Static classes*******************************************************************/
+
+main {
+  height: 100%;
+  width: fit-content;
+  padding-top: 8rem;
+  display: flex;
+  gap: 16rem;
+}
+
+main aside {
+  background-color: #d9480f;
+  color: #ffe8cc;
+  height: 100%;
+  border-radius: 0 2rem 2rem 0;
+  padding: 2rem 14rem 2rem 4rem;
+}
+
+aside h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+main .NewProject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.NewProject menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 2rem;
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #d9480f;
+  color: #d9480f;
+  border-radius: 0.8rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.btn-fill {
+  background-color: #d9480f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+}
+
+.hover:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.NewProject div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.NewProject p {
+  display: flex;
+  flex-direction: column;
+}
+
+p input,
+textarea {
+  background-color: #ffb459;
+  max-width: 60rem;
+  border: none;
+  border-radius: 0.6rem;
+  min-height: 4rem;
+  max-height: 40rem;
+  min-width: 60rem;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+}
+
+p input:focus,
+textarea:focus {
+  outline-color: #d9480f;
+  outline-style: dashed;
+  outline-width: 2px;
+}
+
+.noProject {
+  width: 50rem;
 }

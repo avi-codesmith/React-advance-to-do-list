@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./index.css";
+import SideBar from "./components/SideBar";
+import NewProject from "./components/NewProject";
+import NoProject from "./components/NoProject";
 
 function App() {
+  const [showfrom, setShowFrom] = useState(false);
+
+  function handleOpenform() {
+    setShowFrom((prev) => !prev);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <SideBar handleOpenform={handleOpenform} isShowfrom={showfrom} />
+      {showfrom && <NewProject handleOpenform={handleOpenform} />}
+      {!showfrom && <NoProject handleOpenform={handleOpenform} />}
+    </main>
   );
 }
 
