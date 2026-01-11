@@ -1,4 +1,9 @@
-export default function SideBar({ handleOpenform, projects }) {
+export default function SideBar({
+  handleOpenform,
+  projects,
+  selectProject,
+  // selectProjectID,
+}) {
   return (
     <aside>
       <h2>Your Projects</h2>
@@ -8,16 +13,25 @@ export default function SideBar({ handleOpenform, projects }) {
         </button>
       </div>
       <ul>
-        <li>
-          {projects.map((project) => (
+        {projects.map((project) => {
+          // let cssClass;
+          // if (project.id === selectProjectID) {
+          //   cssClass = "hover";
+          // } else {
+          //   cssClass = "";
+          // }
+          return (
             <li key={project.id}>
-              <button className="hover">
+              <button
+                className="hover"
+                onClick={() => selectProject(project.id)}
+              >
                 <p>{project.title}</p>
                 <img src="go.svg" />
               </button>
             </li>
-          ))}
-        </li>
+          );
+        })}
       </ul>
     </aside>
   );

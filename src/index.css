@@ -154,7 +154,7 @@ aside li button {
   display: flex;
   justify-content: space-between;
   background-color: #842500;
-  color: #ffe8cc;
+  color: #fff;
   border: none;
   padding: 1rem 1.6rem;
   border-radius: 0.4rem;
@@ -184,6 +184,7 @@ aside li button:hover {
 
 aside li button:hover img {
   display: flex;
+  margin-right: 1rem;
 }
 
 aside li {
@@ -264,4 +265,75 @@ textarea:focus {
 
 .noProject {
   width: 50rem;
+}
+/* ////////////////////////////////////////// */
+
+.project-details {
+  padding: 2rem;
+  background-color: #ffcb8b;
+  height: 100%;
+  max-width: 70rem;
+  width: 70rem;
+  border-radius: 2rem;
+}
+
+.project-header {
+  margin-bottom: 3rem;
+}
+
+.project-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #d9480f;
+  margin: 0;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.btn-delete {
+  background-color: transparent;
+  border: 1.5px solid #ff5050;
+  color: #ff5050;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-delete:hover {
+  background-color: #ff5050;
+  color: #ffffff;
+  border-color: #ff5050;
+}
+
+.project-description {
+  font-size: 1.35rem;
+  color: #c14b1a;
+  margin: 1.2rem 0 !important;
+  margin-left: 2rem !important;
+  max-width: 700px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.project-date {
+  margin-left: 2rem !important;
+  font-size: 1.15rem;
+  color: #8a3b1d;
+  font-weight: 600;
+  margin-top: 0.8rem;
 }
