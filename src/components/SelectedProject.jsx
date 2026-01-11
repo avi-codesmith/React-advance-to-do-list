@@ -1,3 +1,5 @@
+import Task from "./Task";
+
 export default function SelectedProject({ project, onDel }) {
   console.log(project);
   const formattedDate = new Date(project.dueDate)
@@ -23,8 +25,7 @@ export default function SelectedProject({ project, onDel }) {
         <p className="project-description">{project.description}</p>
         <p className="project-date">- {formattedDate}</p>
       </header>
-
-      <h2>TASKS</h2>
+      <Task />
     </section>
   );
 }
