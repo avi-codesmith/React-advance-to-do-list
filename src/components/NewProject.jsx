@@ -2,7 +2,7 @@ import ErrorModal from "../components/ErrorModal";
 import Input from "./Input.jsx";
 import { useRef } from "react";
 
-export default function NewProject({ handleAddProject }) {
+export default function NewProject({ handleAddProject, onCancel }) {
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();
@@ -37,7 +37,9 @@ export default function NewProject({ handleAddProject }) {
       </ErrorModal>
       <div className="NewProject">
         <menu>
-          <button className="btn hover">Cancel</button>
+          <button className="btn hover" onClick={onCancel}>
+            Cancel
+          </button>
           <button onClick={handleSave} className="btn hover btn-fill">
             Save
           </button>
