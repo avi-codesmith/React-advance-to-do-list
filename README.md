@@ -15,9 +15,9 @@
 ---
 
 ## 3️⃣You may add and delete tasks inside a project:
-<img width="685" height="207" alt="add and delete task" src="https://github.com/user-attachments/assets/298ba7dc-7fad-489b-ad33-a9ea94a07c49" />
+<img width="500" alt="add and delete task" src="https://github.com/user-attachments/assets/298ba7dc-7fad-489b-ad33-a9ea94a07c49" />
 
 ---
 
 ## 4️⃣Projects can be added and removed as needed:
-<img width="1385" height="591" alt="delete your task by click delete btn" src="https://github.com/user-attachments/assets/32c81233-6014-485d-8a36-2694788c24fc" />
+<img width="500" alt="delete your task by click delete btn" src="https://github.com/user-attachments/assets/32c81233-6014-485d-8a36-2694788c24fc" />
