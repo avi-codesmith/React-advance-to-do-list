@@ -27,7 +27,7 @@ export default function SideBar({
                 onClick={() => selectProject(project.id)}
               >
                 <p>{project.title}</p>
-                <img src="go.svg" />
+                <img src="go.svg" alt="Title img" />
               </button>
             </li>
           );
